@@ -24,9 +24,9 @@ export const business = {
   mapsEmbedSrc:
     'https://maps.google.com/maps?q=Main%20Rd%2C%20Near%20Balaji%20Marble%2C%20Dunkar%2C%20Bidasar%2C%20Rajasthan%20331501&t=&z=15&ie=UTF8&iwloc=&output=embed',
 
-  phone: '7851103150',
-  phoneDisplay: '+91 78511 03150',
-  whatsapp: '7851103150',
+  phone: '7851031050',
+  phoneDisplay: '+91 7851031050',
+  whatsapp: '7851031050',
   email: 'gahlotmohit89@gmail.com',
 
   hours: {
