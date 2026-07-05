@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #0a0b0d;
+  }
+  ::selection {
+    background-color: rgba(47, 111, 255, 0.35);
+  }
+
+  /* Visible keyboard focus everywhere */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #6fa1ff;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  /* Signature element: digital-instrument-cluster style numerals
+     used for prices, specs, and the EMI/range calculator readouts —
+     ties the UI back to the scooter's own dashboard. */
+  .dash-readout {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 24px rgba(47, 111, 255, 0.45);
+  }
+
+  .bg-noise {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-size: 3px 3px;
+  }
+
+  .container-px {
+    @apply px-5 sm:px-8 lg:px-12;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
